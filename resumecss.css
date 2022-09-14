@@ -1,17 +1,48 @@
 /*global styles
 --------------------*/
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     color:343434;
+    margin: 0;
+    padding: 0;
+    font-family: halyard-text, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
 }
+
 a {
     color: #FFE66D;
 }
+ 
 a:hover {
     text-decoration: none;
 }
 
+h1 { 
+    font-size: 80px;
+    line-height: 2;
+}
 
+h2 {
+    font-size: 40px;
+}
 
+h1, h2 {
+    font-family: dapifer, serif;
+    font-weight: 400;
+    margin: 0;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
 
 
 /*Profile
@@ -19,7 +50,11 @@ a:hover {
 header {
     background-color: rgb(29, 29, 79);
     color: #f7f7f7;
-}
+   }
+
+   h1, h2 {
+    text-shadow: 2px 2px 4px #626161;
+   }
 
 /*projects
 -------------------*/
@@ -35,9 +70,25 @@ color: #2F3061
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
     background: rgba(47, 48, 97, 80%)
+}
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+margin-top: 0;
 }
 
 
@@ -53,10 +104,10 @@ color: #2F3061
 -----------------------------*/
 
 
-
 /*contact info
 -------------------------------*/
 footer {
     background-color: #343434;
     color: #f7f7f7;
+    text-shadow: 2px 2px 4px #000000;
 }
